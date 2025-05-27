@@ -21,28 +21,11 @@ a:focus {
 
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvb;
-  background-image: var(--background-image, url(../images/cover.png));
+  height: 100dvb;
+  background-image: var(--background-image);
   background-attachment: fixed;
-  background-size: cover;
-  background: repeating-linear-gradient(
-      to right,
-      #d3d3d3 0px,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3 0px,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  background-position: top;
-  background-repeat: repeat;
   background-color: #fff;
+  background-size: cover;
   font-family: var(--main-font, Inter-Variable, Arial, sans-serif);
   font-variation-settings: "wght" 400;
   display: flex;
@@ -114,6 +97,7 @@ a:focus {
   font-size: var(--main-font-size, 18px);
   margin-block-start: 1px;
   padding-inline-end: 10px;
+  line-height: 21px;
 }
 
 .image__wrapper {
@@ -226,7 +210,7 @@ a:focus {
   background-color: transparent;
   border: none;
   padding-right: 0;
-  transition: box-shadow 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
@@ -422,7 +406,7 @@ a:focus {
   .label {
     right: 25px;
   }
-  
+
   .dialog {
     width: 357px;
     padding: 30px;

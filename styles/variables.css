@@ -6,7 +6,21 @@
     --main-font: 'Inter-Variable', Arial, sans-serif;
     --main-font-regular: 400;
     --main-font-bold: 700;
-    --background-image: url(../images/cover.png);
+    --background-image: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --button__text-color: #fff;
     --contour-color: black;
     --animation-fill-color: #FF0000;
